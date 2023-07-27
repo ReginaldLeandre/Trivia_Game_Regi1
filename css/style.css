@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Blackletter';
+    src: url('fonts/BlackletterExtrabold-51DV.ttf') format('truetype');
+  }
+
+.AOT_Logo_font{
+    text-align: center;
+    font-family: 'Blackletter', sans-serif; 
+    
+  }
+
+  .container{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .score-container{
+    text-align: center;
+    margin-top: 50px;
+  }
+
+h2{
+    font-family: 'Blackletter', sans-serif; 
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: black;
+    border: none;
+    cursor: pointer; 
+}
+
+button:hover{
+    background-color: #4caf50;
+}
+
+#question-container{
+    margin-bottom: 20px;
+}
+
+#score{
+    font-weight: bold;
+    color: #4caf50;
+}
