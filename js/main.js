@@ -214,7 +214,7 @@ this function will also end the game if the value of current question exceeds
 the lenght of indexes in the array AOTquestions
 
 i will need to add an event listener to the button tag in the HTML document 
-so that it will call this method
+so that it will call this method/
  */
 
 
