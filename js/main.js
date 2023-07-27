@@ -4,6 +4,8 @@
 //by the checkAnswer function,
 // let currentChoice = null;
 
+//this variable will be used to check if the show results function is called, if it was then it will show the reset button
+let wasShowResultsCalled = false;
 
 // const listItem = document.createElement("li");
 // const choicesInput = document.createElement("input");
@@ -61,8 +63,8 @@ let score = 0;
 let currentQuestion = 0;
 
 // //this will hold the document elements so that the questions can be displayed in the appropriate location on the UI
-// const questionElement = document.getElementById("question-container");
-// const choicesElement = document.getElementById("choices-container");
+const questionElement = document.getElementById("question-container");
+const choicesElement = document.getElementById("choices-container");
 
 // //this will create variables to hold the values of each array value
 // //at the index of current question
@@ -112,6 +114,21 @@ function hideNextButton() {
     nextBtn.style.display = "none";
   }
   
+//   function hideResetButton() {
+//     const resetButton = document.getElementById("resetButton");
+//     resetButton.style.display = "none";
+// }
+
+// function showResetButton() {
+//     currentQuestion = 0;
+//     const resetButton = document.getElementById("resetButton");
+//     resetButton.style.display = "block";
+//    // resetButton.addEventListener("click", displayQuestion)
+// //    resetButton.addEventListener("click", => () {
+// //     currentQuestion = 0;
+//    })
+// }
+
 
 
 //this function will pull the data from the question property of each array object and display them with the .textContent function
@@ -202,6 +219,7 @@ function nextQ() {
         hideNextButton();
     } else {
         showResults();
+        
     }
   }
 
@@ -232,6 +250,8 @@ function showResults() {
         <h1>Results:</h1>
         <p>You scored ${score} out of ${AOTquestions.length}!</p>
     `;
+    // wasShowResultsCalled = true
+    // showResetButton();
   }  
 
 
@@ -239,9 +259,11 @@ function showResults() {
 function init() {
     displayQuestion();
     hideNextButton();
-      
+    // hideResetButton()
 
-
+    // if(wasShowResultsCalled === true){
+    //     showResetButton()
+    // }
 }
 
 init()
