@@ -30,7 +30,7 @@ const AOTquestions = [
         answers: "When he found out about sister"
     }, 
     {
-        question: "Why did the titan kneel to Ilse Langnar",
+        question: "Why did the titan kneel to Ilse Langnar?",
         choices: ["She looked like Ymir", "It was dark, titans need sun to move", "It was healing it's wounds", "No reason, titans just do things"],
         answers: "She looked like Ymir"
     },
