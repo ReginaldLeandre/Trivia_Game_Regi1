@@ -2,6 +2,12 @@
     font-family: 'Blackletter';
     src: url('fonts/BlackletterExtrabold-51DV.ttf') format('truetype');
   }
+ body{
+  background-image: url('imgs/36626.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
 
 .AOT_Logo_font{
     text-align: center;
@@ -32,6 +38,7 @@ button {
 
 #question-container{
     margin-bottom: 20px;
+    background-color: aliceblue;
 }
 
 #score{
